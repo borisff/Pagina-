@@ -1,0 +1,9 @@
+Adform=window.Adform||{};
+Adform.host="https://a1.adform.net";
+Adform.shost="https://s2.adform.net";
+Adform.scriptBase=Adform.shost+"/banners/scripts/";
+Adform.cache="618";
+Adform.ADFBannerData={"URL":"https://a1.adform.net/adfserve/?bn=29805962;click=https://nym1-ib.adnxs.com/click?ca1nN6sM6j86e8Ke0EbjPwAAAGC4HvE_gO1gxD4B5D9GJXUCmgjrP86XcsUbliNhUxXecJogCE_HDAVdAAAAAOu6cgB2CgAApyMAAAIAAAAEUDgJ2DgPAAAAAABVU0QAVVNEACwB-gBZBwAAAAABAQUCAAAAAMYAAyINNQAAAAA./cpcpm=AAAAAAAAAAA=/bcr=AAAAAAAA8D8=/cnd=%21axFUbwiwxMwNEISg4UkY2PE8IAAoADEAAAAAAAAAADoJTllNMjo0MDEwQNMNSdwpHaz_c-w_UQAAAAAAAAAAWQAAAAAAAAAAYQAAAAAAAAAAaQAAAAAAAAAAcQAAAAAAAAAA/cca=OTEyNyNOWU0yOjQwMTA=/bn=77328/clickenc=;ord=1760479064","CREFURL":"https%3a%2f%2fnym1-ib.adnxs.com%2fab%3fan_audit%3d0%26referrer%3dhttps%253A%252F%252Fweather.com%252Fes-CL%252Ftiempo%252Fmensual%252Fl%252Fcb0b09b804fbcfb93b3485607c771c23607ce00484606431defb3c0cd10efb79%26e%3dwqT_3QKjC_QgAaMFAAADANYABQEIx5mU6AUQzq_Kq7zD5ZFhGNOq-Iank4iETyo2CXGtZzerDOo_ETp7wp7QRuM_GQAAAGC4HvE_IYDtYMQ-AeQ_KUYldQKaCOs_MQAAAADXo9A_MOv1ygM49hRAp0dIAlCEoOFJWNjxPGAAaNmOjAF4kNwEgAEBigEDV","BN":29805962};
+if(!Adform.ADFBannerParams)Adform.ADFBannerParams=[];
+Adform.ADFBannerParams.push(Adform.ADFBannerData);
+typeof Adform.ADFUtilInstance=="undefined"?document.write('<scr'+'ipt type="text/javascript" src="https://s2.adform.net/stoat/618/s2.adform.net/bootstrap.js"></scr'+'ipt>'):new Adform.ADFBanner();

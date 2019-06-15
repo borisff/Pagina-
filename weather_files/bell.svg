@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="24px" viewBox="0 0 21 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/bell</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Designs-MVP" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="final,-mobile" transform="translate(-272.000000, -213.000000)" fill="#3C8ED2">
+            <g id="Web-push-one-click-opt-in-Copy" transform="translate(0.000000, 109.000000)">
+                <g id="alerts-on" transform="translate(15.000000, 94.000000)">
+                    <g id="icon/bell-blue" transform="translate(245.000000, 0.000000)">
+                        <path d="M22.5,33.7842136 C23.8258929,33.7842136 24.9107143,32.6996675 24.9107143,31.3741111 L20.0892857,31.3741111 C20.0892857,32.6996675 21.1620536,33.7842136 22.5,33.7842136 L22.5,33.7842136 Z M29.7321429,26.5539061 L29.7321429,20.5286499 C29.7321429,16.8291426 27.7553571,13.7321609 24.3080357,12.912726 L24.3080357,12.0932912 C24.3080357,11.0930986 23.5004464,10.2857143 22.5,10.2857143 C21.4995536,10.2857143 20.6919643,11.0930986 20.6919643,12.0932912 L20.6919643,12.912726 C17.2325893,13.7321609 15.2678571,16.817092 15.2678571,20.5286499 L15.2678571,26.5539061 L12.8571429,28.9640086 L12.8571429,30.1690599 L32.1428571,30.1690599 L32.1428571,28.9640086 L29.7321429,26.5539061 L29.7321429,26.5539061 Z" id="icon"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
