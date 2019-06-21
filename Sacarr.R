@@ -21,4 +21,10 @@ tabla1 <-html_table(html_nodes(nodesTabla,"table")[[1]])
 #----------------------------------------------------------------------------
 
 #intentamos extraer datos de una pagina.
-read_html("weather.html")
+#guardamos la pagina que trabajaremos.
+html <- "https://www.emol.com/noticias/Internacional/2019/06/20/952042/Fiscal-general-de-Venezuela-le-afirma-a-Bachelet-que-la-oposicion-es-culpable-de-77-asesinatos.html"
+paginaEmol <- read_html(html)
+#teniendo la informacion realizamos la extraccion 
+nodesDelHTMLEmol <- html_nodes(paginaEmol,"#cuDetalle_cuTexto_textoNoticia")
+#solo trabajamos con el texto
+textoEmol <- html_text(nodesDelHTMLEmol)
