@@ -88,5 +88,38 @@ tabla2$Jumbo <- as.numeric(tabla2$Jumbo)
 write.table(tabla2, file="tablapaginaConNumero.csv", sep = ";")
 
 #para juntar dos tablas ocupo la funcion 
-#mablaMerge <- rbind(tabla1,tabla2)
+#tablaMerge <- rbind(tabla1,tabla2)
+
+#para realizar una busqueda de solo algunos elementos ocupamos lo siguiente
+#elementosEncontrados <- tablaMerge[which(tablamerge$nombrDeColumna==loQBuscamos),]
+
+###############################################################################
+#--------------------------------Graficos--------------------------------------
+##############################################################################
+
+#tableMerge %>%
+  #ggplot() +
+
+
+#############################################################################
+#------------------------------tienda chilena del lirbo---------------------
+#############################################################################
+paginaChilenaDelLibro <- "https://www.feriachilenadellibro.cl/"
+
+paginaChilenaRead <- read_html(paginaChilenaDelLibro)
+
+paginaChilenaNodesImage <- html_nodes(paginaChilenaRead,".image-container")
+#--------------------------------------------------------------------------
+
+paginaChilenaNodesReferencias <- html_nodes(paginaChilenaRead,".product-item-photo")
+
+Paginas <- html_attr(paginaChilenaNodesReferencias,"href")
+
+for(refe in Paginas){
+ print(refe)
+  lecturaLibro <- read_html(refe)
+  precio <- html_text(html_nodes(lecturaLibro,".price"))
+  print(precio)
+}
+
 
