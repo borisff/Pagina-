@@ -127,5 +127,21 @@ for(refe in Paginas){
   precio <- html_text(html_nodes(lecturaLibro,".price"))
   print(precio)
 }
+ ############################################################################
+#-----------------------intentamos trabajar con weather----------------------
+##############################################################################
+htmlWeather <- "https://weather.com/es-CL/tiempo/mensual/l/cb0b09b804fbcfb93b3485607c771c23607ce00484606431defb3c0cd10efb79"
+paginaWeather <- read_html(htmlWeather)
 
+#teniendo la informacion realizamos la extraccion 
+nodesDelHTMLWeatherDia <- html_nodes(paginaWeather,".date")
 
+#solo trabajamos con el texto
+html_text(nodesDelHTMLWeatherDia)
+#--------------------------------------------------------------------
+
+#teniendo la informacion realizamos la extraccion 
+nodesDelHTMLWeatherTemperaturaAlta <- html_nodes(paginaWeather,".temp hi")
+
+#solo trabajamos con el texto
+html_text(nodesDelHTMLWeatherTemperaturaAlta)
