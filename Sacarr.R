@@ -137,11 +137,22 @@ paginaWeather <- read_html(htmlWeather)
 nodesDelHTMLWeatherDia <- html_nodes(paginaWeather,".date")
 
 #solo trabajamos con el texto
-html_text(nodesDelHTMLWeatherDia)
+dia <- html_text(nodesDelHTMLWeatherDia)
 #--------------------------------------------------------------------
 
 #teniendo la informacion realizamos la extraccion 
-nodesDelHTMLWeatherTemperaturaAlta <- html_nodes(paginaWeather,".temp hi")
+nodesDelHTMLWeatherTemperaturaAlta <- html_nodes(paginaWeather,".temps")
 
 #solo trabajamos con el texto
-html_text(nodesDelHTMLWeatherTemperaturaAlta)
+temperatura <- html_text(nodesDelHTMLWeatherTemperaturaAlta)
+# vemos como se ven los datos 
+write.table(dia, file="dia.csv", sep = ";")
+
+#pego los dias y la temperatura.
+pegado <- paste(dia,";",temperatura)
+
+datosLimpios <- gsub("°",";",pegado)
+
+#guardamos los datos 
+write.table(datosLimpios, file="datosPrueba.csv", sep = ";")
+
