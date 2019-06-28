@@ -102,7 +102,7 @@ write.table(tabla2, file="tablapaginaConNumero.csv", sep = ";")
 ###############################################################################
 #--------------------------------Graficos--------------------------------------
 ##############################################################################
-
+library('ggplot2')
 #tableMerge %>%
   #ggplot() +
 
@@ -156,3 +156,19 @@ datosLimpios <- gsub("°",";",pegado)
 #guardamos los datos 
 write.table(datosLimpios, file="datosPrueba.csv", sep = ";")
 
+#################################################################################
+#-----------------------------Clase 28-06-2019---------------------------------
+###############################################################################
+
+#para llegar a un elemento dentro de un elemento es necesario 
+
+#.clase1 > p 
+#as.numeric() es para pasar los numeros a numeros jajaj y no como dato 
+# para pegar debemos ocupar el data.frame
+
+# data.frame(dia = nombre de donde guarde los dias, temperatura = donde puse la temperatura)
+
+# si la pagina esta ordenada puedo utilizar un for para recorrer todas las paginas
+#for(i in 1:5){
+#reclamos <- paste(url,i,sep = "")
+#}
